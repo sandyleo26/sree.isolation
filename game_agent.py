@@ -287,6 +287,7 @@ class AlphaBetaPlayer(IsolationPlayer):
         # Initialize the best move so that this function returns something
         # in case the search fails due to timeout
         if len(legal_moves) == 0:
+            print("forfeit 1");
             return (-1, -1)
 
         bestMove = (3, 3)
